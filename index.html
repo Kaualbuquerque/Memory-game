@@ -5,19 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <title>Memory Game</title>
 </head>
 
 <body>
     <main>
-        <ul class="table">
-        </ul>
+        <section class="btns">
+            <h1>Select Difficulty Level:</h1>
+            <button class="diff-btn easy" data-difficulty="easy">Easy</button>
+            <button class="diff-btn medium" data-difficulty="medium">Medium</button>
+            <button class="diff-btn hard" data-difficulty="hard">Hard</button>
+        </section>
+
+        <section>
+            <ul class="table">
+            </ul>
+        </section>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
-        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Congratulations! The game will restart...</p>
+        </div>
+    </div>
+    
 </body>
 
 </html>
+<script src=" https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"> </script>
+<script src="index.js"></script>
